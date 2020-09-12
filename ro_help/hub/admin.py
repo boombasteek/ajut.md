@@ -84,7 +84,7 @@ class NGOAdmin(admin.ModelAdmin):
     list_per_page = 25
     form = NGOForm
 
-    list_display = ("name", "contact_name", "county", "city", "accepts_transfer", "accepts_mobilpay", "created")
+    list_display = ("name", "contact_name", "county", "city", "accepts_transfer", "created")
     list_filter = (
         "city",
         "county",
@@ -136,7 +136,7 @@ class NGOAdmin(admin.ModelAdmin):
                 ngo.save()
 
         NGONeed.objects.filter(ngo=ngo, kind=KIND.MONEY).delete()
-        if ngo.accepts_transfer or ngo.accepts_mobilpay:
+        if ngo.accepts_transfer:
             need, created = NGONeed.objects.get_or_create(
                 ngo=ngo, title=ngo.name, kind=KIND.MONEY, city=ngo.city, county=ngo.county,
             )

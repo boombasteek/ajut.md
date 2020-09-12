@@ -26,8 +26,6 @@ from hub.models import (
     URGENCY,
 )
 from hub.forms import NGOHelperForm, NGORegisterRequestForm
-from mobilpay.forms import PaymentOrderForm
-from mobilpay.models import PaymentOrder
 
 
 NEEDS_PER_PAGE = 3
@@ -314,9 +312,6 @@ class NGODonateCreateView(SuccessMessageMixin, InfoContextMixin, CreateView):
     model = PaymentOrder
     form_class = PaymentOrderForm
     success_message = _("Thank you for your donation!")
-
-    def get_success_url(self):
-        return reverse("mobilpay:initialize-payment", kwargs={"order": self.object.order_id})
 
     def get_initial(self):
         return {"amount": self.request.GET.get("amount", "0")}

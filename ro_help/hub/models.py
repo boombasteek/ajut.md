@@ -247,23 +247,8 @@ class NGO(TimeStampedModel):
         _("NGO Statute"), max_length=300, null=True, blank=True, storage=PrivateMediaStorageClass()
     )
 
-    accepts_mobilpay = models.BooleanField(_("Accepts mobilpay"), default=False)
     accepts_transfer = models.BooleanField(_("Accepts transfers"), default=False)
     donations_description = models.TextField(_("Donations description"), null=True, blank=True)
-
-    mobilpay_icc = models.CharField(
-        _("mobilpay Merchant identifier code"),
-        max_length=24,
-        null=True,
-        blank=True,
-        help_text=_("XXXX-XXXX-XXXX-XXXX-XXXX"),
-    )
-    mobilpay_public_key = models.FileField(
-        _("Mobilpay Public key"), max_length=300, null=True, blank=True, storage=PrivateMediaStorageClass()
-    )
-    mobilpay_private_key = models.FileField(
-        _("Mobilpay Private key"), max_length=300, null=True, blank=True, storage=PrivateMediaStorageClass()
-    )
 
     def __str__(self):
         return self.name

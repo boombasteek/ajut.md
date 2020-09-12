@@ -25,7 +25,6 @@ from hub.models import (
     FFC_GROUP_NAME,
     NGOReportItem,
 )
-from mobilpay.models import PaymentOrder
 
 
 fake = Faker()

@@ -99,10 +99,6 @@ msgstr "Fișier CSV încărcat"
 msgid "Import Cities"
 msgstr "Încarcă Orase"
 
-#: hub/forms.py:38 hub/forms.py:40 hub/forms.py:42 hub/forms.py:44
-msgid "To accept mobilpay donations this field is required."
-msgstr "Pentru a accepta donații prin Mobilpay acest câmp este obligatoriu."
-
 #: hub/forms.py:47 hub/forms.py:49
 msgid "To accept money transfer this field is required"
 msgstr "Pentru a accepta transfer în bani, acest câmpt este obligatoriu"
@@ -190,20 +186,6 @@ msgstr "Descriere"
 msgid "Contact person's name"
 msgstr "Numele persoanei de contact"
 
-#: hub/models.py:234 hub/models.py:387 hub/models.py:405 hub/models.py:436
-#: mobilpay/models.py:25
-msgid "Email"
-msgstr "Email"
-
-#: hub/models.py:235 hub/models.py:389 hub/models.py:406 mobilpay/models.py:24
-msgid "Phone"
-msgstr "Telefon"
-
-#: hub/models.py:236 hub/models.py:409 hub/models.py:439
-#: hub/templates/ngo/detail.html:122 mobilpay/models.py:26
-msgid "Address"
-msgstr "Adresa"
-
 #: hub/models.py:242
 msgid "Logo"
 msgstr "Logo"
@@ -216,10 +198,6 @@ msgstr "Prima pagină a ultimului bilanț contabil"
 msgid "NGO Statute"
 msgstr "Statutul Asociației"
 
-#: hub/models.py:250
-msgid "Accepts mobilpay"
-msgstr "Acceptă donații prin Mobilpay"
-
 #: hub/models.py:251
 msgid "Accepts transfers"
 msgstr "Acceptă donații prin transfer bancar"
@@ -228,21 +206,9 @@ msgstr "Acceptă donații prin transfer bancar"
 msgid "Donations description"
 msgstr "Descrierea donațiilor"
 
-#: hub/models.py:255
-msgid "mobilpay Merchant identifier code"
-msgstr "cod de identificare comerciant mobilpay"
-
 #: hub/models.py:259
 msgid "XXXX-XXXX-XXXX-XXXX-XXXX"
 msgstr "XXXX-XXXX-XXXX-XXXX-XXXX"
-
-#: hub/models.py:262
-msgid "Mobilpay Public key"
-msgstr "Cheie publică Mobilpay"
-
-#: hub/models.py:265
-msgid "Mobilpay Private key"
-msgstr "Cheie privată Mobilpay"
 
 #: hub/models.py:294
 msgid "My organizations"
@@ -259,10 +225,6 @@ msgstr "Tag-uri resurse"
 #: hub/models.py:313
 msgid "Resource tag"
 msgstr "Tag resurse"
-
-#: hub/models.py:341 mobilpay/models.py:13
-msgid "NGO"
-msgstr "ONG"
 
 #: hub/models.py:343 hub/models.py:371 hub/templates/ngo/detail.html:291
 msgid "Title"
@@ -371,10 +333,6 @@ msgstr "Avatar"
 #: hub/models.py:448
 msgid "Image should be 500x500px"
 msgstr ""
-
-#: hub/models.py:454 mobilpay/models.py:29 mobilpay/models.py:53
-msgid "Registered on"
-msgstr "Înregistrare"
 
 #: hub/models.py:459
 msgid "Votes history"
@@ -2407,79 +2365,6 @@ msgstr ""
 #: hub/views.py:316
 msgid "Thank you for your donation!"
 msgstr "Îți mulțumim pentru donație!"
-
-#: mobilpay/admin.py:24
-msgid "Responses"
-msgstr "Răspunsuri plată"
-
-#: mobilpay/models.py:17
-msgid "Order ID"
-msgstr "ID ordin de plată"
-
-#: mobilpay/models.py:19
-msgid "First name"
-msgstr "Prenume"
-
-#: mobilpay/models.py:20
-msgid "Last name"
-msgstr "Nume"
-
-#: mobilpay/models.py:27
-msgid "Details"
-msgstr "Detalii"
-
-#: mobilpay/models.py:28
-msgid "Amount"
-msgstr "Suma"
-
-#: mobilpay/models.py:36
-msgid "Payment Orders"
-msgstr "Ordine de plată"
-
-#: mobilpay/models.py:37
-msgid "Payment Order"
-msgstr "Ordin de plată"
-
-#: mobilpay/models.py:59
-msgid "Payment responses"
-msgstr "Răspunsuri plată"
-
-#: mobilpay/models.py:60
-msgid "Payment response"
-msgstr "Răspuns plată"
-
-#: mobilpay/templates/mobilpay/initialize_payment.html:10
-msgid "You are being redirected to payment website"
-msgstr "Ești redirecționat către site-ul de plată"
-
-#: mobilpay/templates/mobilpay/response.html:12
-#, python-format
-msgid ""
-"\n"
-"                    Plata pentru %(ngo)s a fost confirmată! Îți mulțumim "
-"pentru sprijinul tău în această perioadă! Orice ajutor ne crește capacitatea "
-"de a face bine mai departe.\n"
-"                "
-msgstr ""
-
-#: mobilpay/templates/mobilpay/response.html:17
-#, python-format
-msgid ""
-"\n"
-"                        Plata pentru %(ngo)s este în curs de procesare. Îți "
-"mulțumim pentru sprijinul tău în această perioadă! Orice ajutor ne crește "
-"capacitatea de a face bine mai departe.\n"
-"                    "
-msgstr ""
-
-#: mobilpay/templates/mobilpay/response.html:21
-#, python-format
-msgid ""
-"\n"
-"                        Plata pentru %(ngo)s nu a putut fi confirmată. Te "
-"rugăm să încerci din nou. Îți mulțumim pentru sprijin și răbdare.\n"
-"                    "
-msgstr ""
 
 #: ro_help/settings/base.py:213
 msgid "COVID-19 RO HELP"

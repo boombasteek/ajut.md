@@ -94,10 +94,6 @@ msgstr ""
 msgid "Import Cities"
 msgstr ""
 
-#: hub/forms.py:38 hub/forms.py:40 hub/forms.py:42 hub/forms.py:44
-msgid "To accept mobilpay donations this field is required."
-msgstr ""
-
 #: hub/forms.py:47 hub/forms.py:49
 msgid "To accept money transfer this field is required"
 msgstr ""
@@ -185,20 +181,6 @@ msgstr ""
 msgid "Contact person's name"
 msgstr ""
 
-#: hub/models.py:234 hub/models.py:387 hub/models.py:405 hub/models.py:436
-#: mobilpay/models.py:25
-msgid "Email"
-msgstr ""
-
-#: hub/models.py:235 hub/models.py:389 hub/models.py:406 mobilpay/models.py:24
-msgid "Phone"
-msgstr ""
-
-#: hub/models.py:236 hub/models.py:409 hub/models.py:439
-#: hub/templates/ngo/detail.html:122 mobilpay/models.py:26
-msgid "Address"
-msgstr ""
-
 #: hub/models.py:242
 msgid "Logo"
 msgstr ""
@@ -211,10 +193,6 @@ msgstr ""
 msgid "NGO Statute"
 msgstr ""
 
-#: hub/models.py:250
-msgid "Accepts mobilpay"
-msgstr ""
-
 #: hub/models.py:251
 msgid "Accepts transfers"
 msgstr ""
@@ -223,20 +201,8 @@ msgstr ""
 msgid "Donations description"
 msgstr ""
 
-#: hub/models.py:255
-msgid "mobilpay Merchant identifier code"
-msgstr ""
-
 #: hub/models.py:259
 msgid "XXXX-XXXX-XXXX-XXXX-XXXX"
-msgstr ""
-
-#: hub/models.py:262
-msgid "Mobilpay Public key"
-msgstr ""
-
-#: hub/models.py:265
-msgid "Mobilpay Private key"
 msgstr ""
 
 #: hub/models.py:294
@@ -253,10 +219,6 @@ msgstr ""
 
 #: hub/models.py:313
 msgid "Resource tag"
-msgstr ""
-
-#: hub/models.py:341 mobilpay/models.py:13
-msgid "NGO"
 msgstr ""
 
 #: hub/models.py:343 hub/models.py:371 hub/templates/ngo/detail.html:291
@@ -361,10 +323,6 @@ msgstr ""
 
 #: hub/models.py:448
 msgid "Image should be 500x500px"
-msgstr ""
-
-#: hub/models.py:454 mobilpay/models.py:29 mobilpay/models.py:53
-msgid "Registered on"
 msgstr ""
 
 #: hub/models.py:459
@@ -1896,79 +1854,6 @@ msgstr ""
 
 #: hub/views.py:316
 msgid "Thank you for your donation!"
-msgstr ""
-
-#: mobilpay/admin.py:24
-msgid "Responses"
-msgstr ""
-
-#: mobilpay/models.py:17
-msgid "Order ID"
-msgstr ""
-
-#: mobilpay/models.py:19
-msgid "First name"
-msgstr ""
-
-#: mobilpay/models.py:20
-msgid "Last name"
-msgstr ""
-
-#: mobilpay/models.py:27
-msgid "Details"
-msgstr ""
-
-#: mobilpay/models.py:28
-msgid "Amount"
-msgstr ""
-
-#: mobilpay/models.py:36
-msgid "Payment Orders"
-msgstr ""
-
-#: mobilpay/models.py:37
-msgid "Payment Order"
-msgstr ""
-
-#: mobilpay/models.py:59
-msgid "Payment responses"
-msgstr ""
-
-#: mobilpay/models.py:60
-msgid "Payment response"
-msgstr ""
-
-#: mobilpay/templates/mobilpay/initialize_payment.html:10
-msgid "You are being redirected to payment website"
-msgstr ""
-
-#: mobilpay/templates/mobilpay/response.html:12
-#, python-format
-msgid ""
-"\n"
-"                    Plata pentru %(ngo)s a fost confirmată! Îți mulțumim "
-"pentru sprijinul tău în această perioadă! Orice ajutor ne crește capacitatea "
-"de a face bine mai departe.\n"
-"                "
-msgstr ""
-
-#: mobilpay/templates/mobilpay/response.html:17
-#, python-format
-msgid ""
-"\n"
-"                        Plata pentru %(ngo)s este în curs de procesare. Îți "
-"mulțumim pentru sprijinul tău în această perioadă! Orice ajutor ne crește "
-"capacitatea de a face bine mai departe.\n"
-"                    "
-msgstr ""
-
-#: mobilpay/templates/mobilpay/response.html:21
-#, python-format
-msgid ""
-"\n"
-"                        Plata pentru %(ngo)s nu a putut fi confirmată. Te "
-"rugăm să încerci din nou. Îți mulțumim pentru sprijin și răbdare.\n"
-"                    "
 msgstr ""
 
 #: ro_help/settings/base.py:212
